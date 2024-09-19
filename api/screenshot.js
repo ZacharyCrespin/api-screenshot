@@ -118,7 +118,10 @@ export async function GET(request, context) {
     forceDedupeRedirect = true;
   }
 
-  if(!size || size === "small") {
+  if (size === "search") {
+    viewport = [400, 200];
+    dpr = 0.25;
+  } else if(!size || size === "small") {
     if(!aspectratio || aspectratio === "1:1") {
       viewport = [375, 375];
     } else if(aspectratio === "9:16") {
