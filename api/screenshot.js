@@ -119,7 +119,7 @@ export async function GET(request, context) {
   }
 
   if (size === "search") {
-    viewport = [400, 200];
+    viewport = [720, 405];
     dpr = 0.25;
   } else if(!size || size === "small") {
     if(!aspectratio || aspectratio === "1:1") {

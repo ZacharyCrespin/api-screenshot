@@ -24,6 +24,7 @@
   "homepage": "https://github.com/11ty/api-screenshot#readme",
   "dependencies": {
     "@sparticuz/chromium": "^126.0.0",
+    "puppeteer": "^23.4.0",
     "puppeteer-core": "^22.13.1"
   },
   "devDependencies": {
